@@ -11,12 +11,8 @@
 
 import Foundation
 
-// MARK: - DealElement
-struct Deals: Codable {
-    let data: [DealElement]
-}
-
-struct DealElement: Codable {
+// MARK: - GameDealElement
+struct GameDealElement: Codable {
     let internalName, title: String
     let metacriticLink: String?
     let dealID, storeID, gameID, salePrice: String
@@ -37,4 +33,4 @@ enum SteamRatingText: String, Codable {
     case veryPositive = "Very Positive"
 }
 
-typealias Deal = [DealElement]
+typealias GameDeal = [GameDealElement]

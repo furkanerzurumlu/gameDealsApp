@@ -19,6 +19,7 @@
 		DCAA864628EC41D6005BCDA4 /* DealsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAA864428EC41D6005BCDA4 /* DealsCollectionViewCell.xib */; };
 		DCAA864928EC4D59005BCDA4 /* dealNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */; };
 		DCAA864B28EC522E005BCDA4 /* HomePageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864A28EC522E005BCDA4 /* HomePageVM.swift */; };
+		DCAA864E28EC7DC2005BCDA4 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DCAA864428EC41D6005BCDA4 /* DealsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsCollectionViewCell.xib; sourceTree = "<group>"; };
 		DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealNetworking.swift; sourceTree = "<group>"; };
 		DCAA864A28EC522E005BCDA4 /* HomePageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVM.swift; sourceTree = "<group>"; };
+		DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		DCAA862228EC3C84005BCDA4 /* gameDeals */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA864C28EC7D99005BCDA4 /* Extensions */,
 				DCAA864728EC4D3D005BCDA4 /* Service */,
 				DCAA863828EC3D3F005BCDA4 /* Model */,
 				DCAA863728EC3D2E005BCDA4 /* Screen */,
@@ -130,6 +133,14 @@
 				DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DCAA864C28EC7D99005BCDA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			files = (
 				DCAA862828EC3C84005BCDA4 /* ViewController.swift in Sources */,
 				DCAA862428EC3C84005BCDA4 /* AppDelegate.swift in Sources */,
+				DCAA864E28EC7DC2005BCDA4 /* UIImageViewExtensions.swift in Sources */,
 				DCAA864B28EC522E005BCDA4 /* HomePageVM.swift in Sources */,
 				DCAA864928EC4D59005BCDA4 /* dealNetworking.swift in Sources */,
 				DCAA862628EC3C84005BCDA4 /* SceneDelegate.swift in Sources */,

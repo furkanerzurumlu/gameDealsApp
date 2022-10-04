@@ -13,19 +13,20 @@ class ViewController: UIViewController{
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dealsCollectionView: UICollectionView!
     
-    var viewModel: HomePageVM?
+    var viewModel: HomePageVM = HomePageVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setLayout()
         
-        viewModel?.delegate = self
-        viewModel?.getUpcomingData()
+        viewModel.delegate = self
+        viewModel.getUpcomingData()
         
-        print(viewModel?.data.count ?? 0)
+        
         
         dealsCollectionView.register(DealsCollectionViewCell.nibName, forCellWithReuseIdentifier: DealsCollectionViewCell.identifier)
+        
         dealsCollectionView.delegate = self
         dealsCollectionView.dataSource = self
     }
@@ -40,13 +41,16 @@ class ViewController: UIViewController{
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel?.data.count ?? 0
+        return viewModel.data?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dealsCollectionView.dequeueReusableCell(withReuseIdentifier: DealsCollectionViewCell.identifier, for: indexPath) as! DealsCollectionViewCell
+        cell.gameTitle.text = "\(viewModel.data?[indexPath.row].title ?? "")"
+        cell.gameImage.downloaded(from: viewModel.data?[indexPath.row].thumb ?? "")
         
-        cell.gameTitle.text = viewModel?.data[indexPath.row].title
+        cell.normalPrice.text = "Normal Price:\(viewModel.data?[indexPath.row].normalPrice ?? "")$"
+        cell.dealPrice.text = "Normal Price:\(viewModel.data?[indexPath.row].salePrice ?? "")$"
         return cell
     }
     
