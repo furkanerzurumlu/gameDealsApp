@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gameDeals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SPk-NX-ybP">
-                                <rect key="frame" x="0.0" y="92" width="390" height="718"/>
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bb4-hL-IMA">
@@ -29,7 +30,7 @@
                                 <cells/>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th6-HS-TX7">
-                                <rect key="frame" x="0.0" y="47" width="390" height="30"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,9 +40,9 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="SPk-NX-ybP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DZd-hP-NLR"/>
+                            <constraint firstItem="SPk-NX-ybP" firstAttribute="top" secondItem="th6-HS-TX7" secondAttribute="bottom" constant="15" id="JdJ-ff-hUO"/>
                             <constraint firstItem="th6-HS-TX7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Orh-n4-kmz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="th6-HS-TX7" secondAttribute="trailing" id="ahC-hm-MSw"/>
-                            <constraint firstItem="SPk-NX-ybP" firstAttribute="top" secondItem="th6-HS-TX7" secondAttribute="bottom" constant="15" id="muj-Or-d9z"/>
                             <constraint firstItem="th6-HS-TX7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nwU-iL-Om1"/>
                             <constraint firstItem="SPk-NX-ybP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r92-2g-g3N"/>
                             <constraint firstItem="SPk-NX-ybP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xTo-s7-Abg"/>

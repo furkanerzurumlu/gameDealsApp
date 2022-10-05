@@ -8,6 +8,7 @@
 import UIKit
 
 class DealsCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var firstLayer: UIView!
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var gameTitle: UILabel!
@@ -23,11 +24,15 @@ class DealsCollectionViewCell: UICollectionViewCell {
 
     func setCellLayout(){
         firstLayer.layer.cornerRadius = 10
-        //gameImage.layer.cornerRadius = 20
-        //gameImage.clipsToBounds = true
-        //self.dealRating.layer.cornerRadius = self.dealRating.frame.size.width/2
-        //self.dealRating.clipsToBounds = true
-        //self.dealRating.backgroundColor = .red
+        self.firstLayer.layer.borderWidth = 3
+        self.firstLayer.layer.borderColor = UIColor.black.cgColor
+        
+        self.dealRating.layer.cornerRadius = self.dealRating.frame.size.width/2
+        self.dealRating.clipsToBounds = true
+        self.dealRating.backgroundColor = .red
+        self.dealRating.layer.borderWidth = 1
+        self.dealRating.layer.borderColor = UIColor.black.cgColor
+        
     }
 }
 

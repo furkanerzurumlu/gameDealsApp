@@ -58,23 +58,25 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="odJ-EG-SfM"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ABh-Kr-LNp">
-                                <rect key="frame" x="341" y="15.666666666666671" width="57" height="45"/>
-                                <color key="tintColor" red="0.8392156959" green="0.27450981740000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Wd-nzC">
+                                <rect key="frame" x="300" y="22.999999999999993" width="94" height="85.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ABh-Kr-LNp" secondAttribute="trailing" constant="8" id="HNb-FD-ANC"/>
+                            <constraint firstAttribute="trailing" secondItem="rRT-Wd-nzC" secondAttribute="trailing" constant="12" id="9qX-At-twd"/>
                             <constraint firstAttribute="bottom" secondItem="geE-7M-MKe" secondAttribute="bottom" constant="15" id="N6h-8w-RPw"/>
                             <constraint firstItem="kAj-mZ-wHP" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="8" id="NuS-Wx-vB8"/>
                             <constraint firstAttribute="trailing" secondItem="geE-7M-MKe" secondAttribute="trailing" constant="8" id="PSu-y7-gxt"/>
                             <constraint firstItem="geE-7M-MKe" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="8" id="QJA-4e-pfu"/>
                             <constraint firstItem="kAj-mZ-wHP" firstAttribute="top" secondItem="0Bb-8B-cvN" secondAttribute="top" constant="14" id="QMW-5p-Ie2"/>
-                            <constraint firstItem="geE-7M-MKe" firstAttribute="top" secondItem="ABh-Kr-LNp" secondAttribute="bottom" constant="117" id="Tmj-Q9-BUB"/>
-                            <constraint firstItem="ABh-Kr-LNp" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="341" id="bNf-ls-y0h"/>
+                            <constraint firstItem="rRT-Wd-nzC" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="300" id="iMe-b0-Xcc"/>
+                            <constraint firstItem="rRT-Wd-nzC" firstAttribute="top" secondItem="0Bb-8B-cvN" secondAttribute="top" constant="23" id="paB-Nw-N1j"/>
                             <constraint firstAttribute="trailing" secondItem="kAj-mZ-wHP" secondAttribute="trailing" constant="8" id="q9j-0m-Mfr"/>
-                            <constraint firstItem="ABh-Kr-LNp" firstAttribute="top" secondItem="0Bb-8B-cvN" secondAttribute="top" constant="16" id="sbl-QV-Jq7"/>
+                            <constraint firstItem="geE-7M-MKe" firstAttribute="top" secondItem="rRT-Wd-nzC" secondAttribute="bottom" constant="70" id="vjx-U2-peh"/>
                             <constraint firstItem="geE-7M-MKe" firstAttribute="top" secondItem="kAj-mZ-wHP" secondAttribute="bottom" constant="8" symbolic="YES" id="wtN-8E-1b4"/>
                         </constraints>
                     </view>
@@ -90,6 +92,7 @@
             <size key="customSize" width="406" height="244"/>
             <connections>
                 <outlet property="dealPrice" destination="J5X-WW-gth" id="8Ze-iE-xjw"/>
+                <outlet property="dealRating" destination="rRT-Wd-nzC" id="Vk5-d5-CGW"/>
                 <outlet property="firstLayer" destination="0Bb-8B-cvN" id="Kbq-pG-CXT"/>
                 <outlet property="gameImage" destination="kAj-mZ-wHP" id="7ET-yG-G0g"/>
                 <outlet property="gameTitle" destination="BvA-08-Hxi" id="q14-Jz-Gd6"/>
@@ -99,7 +102,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

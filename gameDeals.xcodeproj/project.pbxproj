@@ -19,7 +19,6 @@
 		DCAA864628EC41D6005BCDA4 /* DealsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAA864428EC41D6005BCDA4 /* DealsCollectionViewCell.xib */; };
 		DCAA864928EC4D59005BCDA4 /* dealNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */; };
 		DCAA864B28EC522E005BCDA4 /* HomePageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864A28EC522E005BCDA4 /* HomePageVM.swift */; };
-		DCAA864E28EC7DC2005BCDA4 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */; };
 		DCAA865128ED5F52005BCDA4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA865028ED5F52005BCDA4 /* SDWebImage */; };
 		DCAA865328ED5F52005BCDA4 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA865228ED5F52005BCDA4 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		DCAA864428EC41D6005BCDA4 /* DealsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsCollectionViewCell.xib; sourceTree = "<group>"; };
 		DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealNetworking.swift; sourceTree = "<group>"; };
 		DCAA864A28EC522E005BCDA4 /* HomePageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVM.swift; sourceTree = "<group>"; };
-		DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 		DCAA862228EC3C84005BCDA4 /* gameDeals */ = {
 			isa = PBXGroup;
 			children = (
-				DCAA864C28EC7D99005BCDA4 /* Extensions */,
 				DCAA864728EC4D3D005BCDA4 /* Service */,
 				DCAA863828EC3D3F005BCDA4 /* Model */,
 				DCAA863728EC3D2E005BCDA4 /* Screen */,
@@ -137,14 +134,6 @@
 				DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		DCAA864C28EC7D99005BCDA4 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +219,6 @@
 			files = (
 				DCAA862828EC3C84005BCDA4 /* ViewController.swift in Sources */,
 				DCAA862428EC3C84005BCDA4 /* AppDelegate.swift in Sources */,
-				DCAA864E28EC7DC2005BCDA4 /* UIImageViewExtensions.swift in Sources */,
 				DCAA864B28EC522E005BCDA4 /* HomePageVM.swift in Sources */,
 				DCAA864928EC4D59005BCDA4 /* dealNetworking.swift in Sources */,
 				DCAA862628EC3C84005BCDA4 /* SceneDelegate.swift in Sources */,
@@ -390,6 +378,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
