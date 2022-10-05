@@ -58,15 +58,23 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="odJ-EG-SfM"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ABh-Kr-LNp">
+                                <rect key="frame" x="341" y="15.666666666666671" width="57" height="45"/>
+                                <color key="tintColor" red="0.8392156959" green="0.27450981740000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ABh-Kr-LNp" secondAttribute="trailing" constant="8" id="HNb-FD-ANC"/>
                             <constraint firstAttribute="bottom" secondItem="geE-7M-MKe" secondAttribute="bottom" constant="15" id="N6h-8w-RPw"/>
                             <constraint firstItem="kAj-mZ-wHP" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="8" id="NuS-Wx-vB8"/>
                             <constraint firstAttribute="trailing" secondItem="geE-7M-MKe" secondAttribute="trailing" constant="8" id="PSu-y7-gxt"/>
                             <constraint firstItem="geE-7M-MKe" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="8" id="QJA-4e-pfu"/>
                             <constraint firstItem="kAj-mZ-wHP" firstAttribute="top" secondItem="0Bb-8B-cvN" secondAttribute="top" constant="14" id="QMW-5p-Ie2"/>
+                            <constraint firstItem="geE-7M-MKe" firstAttribute="top" secondItem="ABh-Kr-LNp" secondAttribute="bottom" constant="117" id="Tmj-Q9-BUB"/>
+                            <constraint firstItem="ABh-Kr-LNp" firstAttribute="leading" secondItem="0Bb-8B-cvN" secondAttribute="leading" constant="341" id="bNf-ls-y0h"/>
                             <constraint firstAttribute="trailing" secondItem="kAj-mZ-wHP" secondAttribute="trailing" constant="8" id="q9j-0m-Mfr"/>
+                            <constraint firstItem="ABh-Kr-LNp" firstAttribute="top" secondItem="0Bb-8B-cvN" secondAttribute="top" constant="16" id="sbl-QV-Jq7"/>
                             <constraint firstItem="geE-7M-MKe" firstAttribute="top" secondItem="kAj-mZ-wHP" secondAttribute="bottom" constant="8" symbolic="YES" id="wtN-8E-1b4"/>
                         </constraints>
                     </view>
@@ -91,6 +99,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

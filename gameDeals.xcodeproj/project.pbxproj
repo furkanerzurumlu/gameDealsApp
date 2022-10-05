@@ -20,6 +20,8 @@
 		DCAA864928EC4D59005BCDA4 /* dealNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864828EC4D59005BCDA4 /* dealNetworking.swift */; };
 		DCAA864B28EC522E005BCDA4 /* HomePageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864A28EC522E005BCDA4 /* HomePageVM.swift */; };
 		DCAA864E28EC7DC2005BCDA4 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA864D28EC7DC2005BCDA4 /* UIImageViewExtensions.swift */; };
+		DCAA865128ED5F52005BCDA4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA865028ED5F52005BCDA4 /* SDWebImage */; };
+		DCAA865328ED5F52005BCDA4 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCAA865228ED5F52005BCDA4 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAA865128ED5F52005BCDA4 /* SDWebImage in Frameworks */,
+				DCAA865328ED5F52005BCDA4 /* SDWebImageMapKit in Frameworks */,
 				DCAA863F28EC3ED1005BCDA4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +165,8 @@
 			name = gameDeals;
 			packageProductDependencies = (
 				DCAA863E28EC3ED1005BCDA4 /* Alamofire */,
+				DCAA865028ED5F52005BCDA4 /* SDWebImage */,
+				DCAA865228ED5F52005BCDA4 /* SDWebImageMapKit */,
 			);
 			productName = gameDeals;
 			productReference = DCAA862028EC3C84005BCDA4 /* gameDeals.app */;
@@ -192,6 +198,7 @@
 			mainGroup = DCAA861728EC3C83005BCDA4;
 			packageReferences = (
 				DCAA863D28EC3ED1005BCDA4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DCAA864F28ED5F52005BCDA4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = DCAA862128EC3C84005BCDA4 /* Products */;
 			projectDirPath = "";
@@ -456,6 +463,14 @@
 				kind = branch;
 			};
 		};
+		DCAA864F28ED5F52005BCDA4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +478,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DCAA863D28EC3ED1005BCDA4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		DCAA865028ED5F52005BCDA4 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCAA864F28ED5F52005BCDA4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DCAA865228ED5F52005BCDA4 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCAA864F28ED5F52005BCDA4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

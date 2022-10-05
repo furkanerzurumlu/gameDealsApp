@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController{
     
@@ -47,10 +48,18 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dealsCollectionView.dequeueReusableCell(withReuseIdentifier: DealsCollectionViewCell.identifier, for: indexPath) as! DealsCollectionViewCell
         cell.gameTitle.text = "\(viewModel.data?[indexPath.row].title ?? "")"
-        cell.gameImage.downloaded(from: viewModel.data?[indexPath.row].thumb ?? "")
+        //cell.gameImage.downloaded(from: viewModel.data?[indexPath.row].thumb ?? "")
         
-        cell.normalPrice.text = "Normal Price:\(viewModel.data?[indexPath.row].normalPrice ?? "")$"
-        cell.dealPrice.text = "Normal Price:\(viewModel.data?[indexPath.row].salePrice ?? "")$"
+        let url = URL.init(string: "\(viewModel.data?[indexPath.row].thumb ?? "")")
+        cell.gameImage.sd_setImage(with: url)
+        
+        
+        cell.normalPrice.text = "Normal Price: $\(viewModel.data?[indexPath.row].normalPrice ?? "")"
+        cell.dealPrice.text = "Normal Price: $\(viewModel.data?[indexPath.row].salePrice ?? "")"
+        
+        
+        
+        //cell.dealRating.text = "\(viewModel.data?[indexPath.row].dealRating ?? "")"
         return cell
     }
     
