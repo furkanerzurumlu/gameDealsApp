@@ -24,7 +24,7 @@ class DealsCollectionViewCell: UICollectionViewCell {
 
     func setCellLayout(){
         firstLayer.layer.cornerRadius = 10
-        self.firstLayer.layer.borderWidth = 3
+        self.firstLayer.layer.borderWidth = 2
         self.firstLayer.layer.borderColor = UIColor.black.cgColor
         
         self.dealRating.layer.cornerRadius = self.dealRating.frame.size.width/2
